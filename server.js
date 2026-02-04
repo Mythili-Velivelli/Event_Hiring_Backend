@@ -17,7 +17,6 @@ mongoose
 
 
 app.post("/requirements", async (req, res) => {
-    console.log("REQ BODY FROM FRONTEND:", req.body)
     try {
         const requirement = new Requirement(req.body);
         await requirement.save()
